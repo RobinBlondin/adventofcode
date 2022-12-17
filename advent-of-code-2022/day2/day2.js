@@ -1,6 +1,7 @@
-var fs = require("fs");
-var text = fs.readFileSync("./input.txt").toString('utf-8');
-var input = text.split("\n");
+const fs = require("fs");
+const input = fs.readFileSync("./input.txt", { encoding: "utf-8"})
+.replace(/\r/g, '')
+.split('\n');
 
 function part1(){
 	
